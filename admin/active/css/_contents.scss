@@ -1,0 +1,105 @@
+@mixin button-decoration {
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    border-radius: 30px;
+    height: 30px;
+    font-size: 14px;
+    border:0;
+    cursor: pointer;
+}
+
+.search-post {
+    display: flex;
+}
+
+.search {
+    input {
+        height: 23px;
+    }
+}
+
+.search-button {
+    font-size: 13px;
+    height: 26px;
+}
+
+.events{
+    margin-bottom: 50px;
+}
+
+
+.event-overall {
+    display: flex;
+    
+}
+
+.post {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+
+.event img {
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    object-fit: cover;
+}
+
+.title {
+    color: white;
+    margin-left: 20px;
+    font-size: 19px;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.management {
+    margin-top: 40px;
+    margin-left: 10rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.stauts-button {
+    input {
+        background-color: $saveBtn;
+        width: 85px;
+        @include button-decoration();
+    } 
+}
+
+.status-button2 {
+    input {
+        background-color: $deleteBtn;
+        width: 65px;
+        @include button-decoration();
+        
+    } 
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-bottom: 30px;
+    a {
+        color: white;
+        margin: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

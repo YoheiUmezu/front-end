@@ -1,0 +1,18 @@
+.header {
+    height: 50px;
+    background: $menuColor;
+    padding: 0 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.content {
+    height: 195vh;
+    display: flex;
+    margin-left: 15rem;
+    color: white;
+    overflow: hidden;
+}
+

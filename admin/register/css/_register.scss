@@ -1,0 +1,73 @@
+@mixin form {
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+@mixin button-decoration {
+    margin-left: 25em;
+    color: white;
+    margin-top: 10px;
+    border-radius: 30px;
+    width: 85px;
+    height: 40px;
+    font-size: 15px;
+    border:0;
+    cursor: pointer;
+}
+
+.email {
+    @include form();
+    p {
+        font-size: 15px;
+        margin-right: 17rem;
+        margin-bottom: 1rem;
+    }
+    input {
+        @include input();
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.password {
+    @include form();
+    p {
+        font-size: 15px;
+        margin-right: 15rem;
+        margin-bottom: 1rem;
+    }
+    input {
+        @include input();
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.confirm-password {
+    @include form();
+    p {
+        font-size: 15px;
+        margin-right: 11rem;
+        margin-bottom: 1rem;
+    }
+    input {
+        @include input();
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.register {
+    margin-left: 17rem;
+    background-color: $saveBtn;
+    @include button-decoration();
+    &:focus {
+        outline: none;
+        width: 86px;
+        height: 41px;
+    }
+}

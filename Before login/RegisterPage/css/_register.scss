@@ -1,0 +1,124 @@
+@mixin form {
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+@mixin input {
+    font-size: 100%;
+    padding: 2px;
+    border-radius: 30px;
+    width: 78%;
+    height: 26px;
+    padding: 3px;
+}
+
+@mixin button-decoration {
+    color: white;
+    margin-top: 10px;
+    border-radius: 30px;
+    width: 85px;
+    height: 40px;
+    font-size: 15px;
+    border:0;
+    cursor: pointer;
+}
+
+.username {
+    @include form();
+    margin-top: -3rem;
+    p {
+        font-size: 15px;
+        margin-right: 15rem;
+        margin-bottom: 1rem;
+    }
+    input {
+        @include input();
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.email {
+    @include form();
+    p {
+        font-size: 15px;
+        margin-right: 17rem;
+        margin-bottom: 1rem;
+    }
+    input {
+        @include input();
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.password {
+    @include form();
+    p {
+        font-size: 15px;
+        margin-right: 15rem;
+        margin-bottom: 1rem;
+    }
+    input {
+        @include input();
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.confirm-password {
+    @include form();
+    p {
+        font-size: 15px;
+        margin-right: 11rem;
+        margin-bottom: 1rem;
+    }
+    input {
+        @include input();
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.check {
+    display: flex;
+}
+
+.checkbox {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.remember {
+    font-size: 13px;
+    color: white;
+    margin-left: 0.5rem;
+}
+
+.register {
+    margin-left: 7.5rem;
+    background-color: $saveBtn;
+    @include button-decoration();
+    &:focus {
+        outline: none;
+        width: 86px;
+        height: 41px;
+    }
+}
+
+.account-link {
+    margin-top: 30px;
+    text-align: center;
+    cursor: pointer;
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 11px;
+        border-bottom: solid white 1px;
+    }
+}

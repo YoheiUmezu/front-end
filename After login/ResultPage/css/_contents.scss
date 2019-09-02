@@ -1,0 +1,97 @@
+@mixin button-decoration-save {
+    color: white;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    border:0;
+    cursor: pointer;
+    width: 75px;
+    height: 30px;
+    background-color: $saveBtn;
+}
+
+@mixin button-decoration-seemore {
+    color: white;
+    margin-top: 10px;
+    border-radius: 30px;
+    font-size: 15px;
+    border:0;
+    cursor: pointer;
+    width: 75px;
+    height: 30px;
+    background-color: $seemoreBtn;
+}
+
+.event-overall {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+
+
+.event img {
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+}
+
+.title {
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.info {
+    margin-left: 20px;
+}
+
+.event-list {
+    list-style: none;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+
+    li {
+        margin-right: 180px;
+    }
+}
+
+.event-desc {
+    color: white;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    float: right;
+}
+
+.seemore {
+    @include button-decoration-seemore();
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+
+.save {
+    @include button-decoration-save();
+    &:focus {
+        outline: none;
+    }
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 30px;
+    a {
+        color: white;
+        margin: 15px;
+    }
+}

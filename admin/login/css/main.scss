@@ -1,0 +1,21 @@
+@import "./variables";
+@import "./components";
+@import "./layouts";
+@import "./login";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../image/image3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.wrapper {
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+}
