@@ -308,12 +308,11 @@
   cursor: pointer;
 }
 
-.edit-button a {
-  color: white;
-  text-decoration: none;
+.edit-button:focus {
+  outline: none;
 }
 
-.delete-button {
+.modalBtn {
   margin-left: 60px;
   background-color: #7206F7;
   padding-top: 5px;
@@ -328,9 +327,8 @@
   cursor: pointer;
 }
 
-.delete-button a {
-  color: white;
-  text-decoration: none;
+.modalBtn:focus {
+  outline: none;
 }
 
 .status-info {
@@ -371,13 +369,13 @@
 }
 
 .modal {
+  display: none;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100vh;
   z-index: 10;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
   -webkit-transition: .6s;
   transition: .6s;
   top: 50%;
@@ -393,13 +391,14 @@
   height: 30%;
   margin: 0 auto;
   border: 0.1px solid white;
-  visibility: hidden;
-  -webkit-transition: .8s;
-  transition: .8s;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-animation-name: modalopen;
+          animation-name: modalopen;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 .modal__heading {
@@ -414,32 +413,21 @@
   font-size: 18px;
 }
 
-#modal:target {
-  opacity: 1;
-  visibility: visible;
-}
-
-#modal:target .modal__content {
-  opacity: 1;
-  visibility: visible;
-}
-
 .modal__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 37%;
+  top: 70%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  margin-top: 4em;
 }
 
-.modal__close {
+.closeBtn {
   color: white;
   text-decoration: none;
-  background-color: #7206F7;
+  background-color: #F70661;
   padding: 3px;
   text-align: center;
   color: white;
@@ -451,9 +439,12 @@
   cursor: pointer;
 }
 
-.modal-delete-button {
+.closeBtn:focus {
+  outline: none;
+}
+
+.no-button {
   padding: 5px;
-  margin-left: 6em;
   background-color: #F70661;
   text-align: center;
   color: white;
@@ -465,8 +456,43 @@
   cursor: pointer;
 }
 
-.modal-delete-button:focus {
+.no-button:focus {
   outline: none;
+}
+
+.delete-button {
+  margin-left: 60px;
+  background-color: #7206F7;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  width: 65px;
+  font-size: 16px;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.delete-button:focus {
+  outline: none;
+}
+
+@-webkit-keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 * {

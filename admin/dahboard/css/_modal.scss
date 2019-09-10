@@ -16,13 +16,13 @@
 }
 
 .modal {
+    display: none;
     position: fixed;
     background-color: rgba(0,0,0,.7);
     width: 100%;
     height: 100vh;
     z-index: 10;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
     transition: .6s;
     @include modal-position();
 }
@@ -34,9 +34,9 @@
     height: 30%;
     margin: 0 auto;
     border: 0.1px solid white;
-    visibility: hidden;
-    transition: .8s;
     @include modal-position();
+    animation-name: modalopen;
+    animation-duration: 0.5s;
 }
 
 .modal__heading {
@@ -47,43 +47,48 @@
     font-size: 18px;
 }
 
-#modal:target{
-    opacity: 1;
-    visibility: visible;
-}
-
-#modal:target .modal__content {
-    opacity: 1;
-    visibility: visible;
-}
-
-
 .modal__buttons {
     display: flex;
     position: absolute;
-    top: 37%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%,-50%);
-    margin-top: 4em;
 }
 
 
-.modal__close {
+
+.closeBtn {
     color: white;
     text-decoration: none;
-    background-color: $deleteBtn;
-    padding: 3px;
-    @include button-decoration();
-}
-
-.modal-delete-button {
-    padding: 5px;
-    margin-left: 6em;
     background-color: $saveBtn;
+    padding: 3px;
     @include button-decoration();
     &:focus {
         outline: none;
     }
+}
+
+.no-button {
+        padding: 5px;
+        background-color: $saveBtn;
+        @include button-decoration();
+    &:focus {
+        outline: none;
+    }
+}
+
+.delete-button {
+    margin-left: 60px;
+    background-color: $deleteBtn;
+    @include button-decoration();
+    &:focus {
+        outline: none;
+    }
+}
+
+@keyframes modalopen {
+    from {opacity: 0}
+    to {opacity: 1}
 }
 
 

@@ -1,0 +1,64 @@
+@mixin button-decoration-add {
+    color: white;
+    border-radius: 30px;
+    font-size: 15px;
+    border:0;
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+    border: 1px solid rgb(128, 126, 126);
+    margin-bottom: 20px;
+}
+
+
+table {
+    margin-top: 50px;
+    margin-bottom: 3rem;
+    width: 70%;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    border: 0.1px solid rgb(128, 126, 126);
+    thead {
+        font-size: 22px;
+    }
+    tbody {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+}
+
+.add-btn {
+    @include button-decoration-add();
+    background-color: $saveBtn;
+    margin-left: 57rem;
+    
+    &:focus {
+        outline: none;
+    }
+}
+
+.edit-btn {
+    @include button-decoration-add();
+    background-color: $editBtn;
+    &:focus {
+        outline: none;
+    }
+}
+
+
+
+.buttons {
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 10px;
+    margin-left: 5rem;
+    background: rgb(31, 30, 30);
+    height: 8rem;
+    width: 10rem;
+    border: 1px solid rgb(128, 126, 126);
+}
+
+
+

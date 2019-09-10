@@ -95,19 +95,17 @@
 .edit-button {
     background-color: $editBtn;
     @include button-decoration();
-    a {
-        color: white;
-        text-decoration: none;
+    &:focus {
+        outline: none;
     }
 }
 
-.delete-button {
+.modalBtn {
     margin-left: 60px;
     background-color: $deleteBtn;
     @include button-decoration();
-    a {
-        color: white;
-        text-decoration: none;
+    &:focus {
+        outline: none;
     }
 }
 

@@ -265,14 +265,15 @@ label {
   outline: none;
 }
 
-.country {
+.genre {
   margin-top: 15px;
   margin-bottom: 30px;
   margin-left: 26px;
   border: none;
+  font-size: 15px;
 }
 
-.country select {
+.genre select {
   background-color: white;
   background: none;
   color: #333333;
@@ -294,6 +295,10 @@ label {
   width: 75px;
   float: right;
   margin-top: 30px;
+}
+
+.save input:focus {
+  outline: none;
 }
 
 * {
