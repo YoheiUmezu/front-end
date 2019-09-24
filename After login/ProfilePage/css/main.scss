@@ -3,7 +3,6 @@
 @import "./components";
 @import "./profile";
 @import "./card";
-@import "./glider.scss";
 
 * {
     margin: 0;
@@ -12,5 +11,4 @@
 
 body {
     background-color: black;
-    overflow: auto;
 }

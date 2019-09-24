@@ -1,0 +1,88 @@
+@mixin tag {
+    color: white;
+    font-size: 12px;
+    border-radius: 20px;
+    background-color: #504f4f;
+    border: none;
+    width: 60px;
+    cursor: pointer;
+    height: 20px;;
+}
+
+.pic{
+    display: block;
+}
+.pic-contents{
+    display: flex;
+}
+.event-title {
+    font-size: 30px;
+}
+
+.link {
+    display: flex;
+    margin-left: 24rem;
+    i{
+        margin: 1rem;
+    }
+}
+
+.save {
+    margin-left: 29px;
+}
+
+.about {
+    margin-top: 1rem;
+    margin-left: 20px;
+    display: flex;
+    border-bottom: solid  white 1px;
+}
+
+.map {
+    margin-right: 40px;
+}
+.small{
+    font-size: 0.8em;
+}
+.pic-map {
+    img {
+        margin-bottom: 1rem;
+    }
+    .genre {
+        margin-top: 1rem;
+        
+    }
+    .tags {
+        margin-right:1rem ;
+    }
+}
+
+.tag-group {
+    align-items: center;
+    display: flex;
+    margin-top: 1rem;
+    button{
+        margin-right: 1rem;
+    }
+    .tag1 {
+        @include tag();
+        &:focus {
+            outline: none;
+        }
+    }
+    .tag2 {
+        @include tag();
+        &:focus {
+            outline: none;
+        }
+    }
+    
+}
+
+
+.date {
+    margin-right: 40px;
+}
+
+
+

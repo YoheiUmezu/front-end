@@ -1,0 +1,62 @@
+.header {
+    height: 50px;
+    background: $menuColor;
+    padding: 0 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.content {
+    height: 220vh;
+    display: flex;
+    margin-left: 17rem;
+    color: white;
+    overflow: hidden;
+    
+
+    
+}
+
+.pic {
+    display: flex;
+}
+
+
+.info {
+    margin-top: 28px;
+    margin-right: 12rem;
+}
+
+.detail {
+    width: 47rem;
+   
+    p { 
+        color: rgb(141, 139, 139);
+        margin: 30px 0 30px 20px ;
+        font-size: 17px;
+    }
+}
+
+.comments {
+    border-top: solid  gray 1px;
+    display: flex;
+}
+
+.user-comments {
+    margin-top: -10rem;
+}
+
+.user-comment {
+    display: flex;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.footer {
+    margin-top: 30px;
+    height: 30vh;
+    background-color: $menuColor;
+}

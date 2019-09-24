@@ -1,0 +1,81 @@
+.new-arrival{
+    display: flex;
+    margin-bottom: 40px;
+}
+h2{
+    font-size: 45px;
+    margin: 30px 0 0 0;
+}
+h3{
+    display: block;
+    font-size: 30px;
+    padding: 40px 0 40px 50px;
+}
+h3:first-of-type{
+    padding: 0 0 40px 50px;
+}
+
+h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+    p{
+        color: #FF8800;
+     }
+}
+
+
+.events-card    {
+    margin: 0 25px 10px 0;
+    
+    img{
+    height: 240px;
+    width: 300px;
+    object-fit: cover;
+    transition-duration: 0.5s;
+}  
+}
+
+.events-card img:hover {
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+    }
+
+
+.heart-icon{
+    margin-top: 0.3em;
+}
+.H-icon{
+    color:#FF4A33;
+    font-size: 1.7em;
+}
+.events-content{
+    display: flex;
+}
+.events-img{
+
+    height: 240px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.events-text{
+    color: #c7c7c7;
+}
+
+.btn-seemore{
+   text-align: center;
+   padding-bottom: 80px;
+
+   button{
+        height: 50px;
+        width: 200px;
+        background: #7206F7;
+        border: none;
+        border-radius: 30px;
+        font-size: 25px;
+        cursor: pointer;
+        outline: none;
+   }
+}

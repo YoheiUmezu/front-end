@@ -2,8 +2,8 @@
     color: white;
     margin-top: 10px;
     border-radius: 30px;
-    height: 40px;
-    font-size: 15px;
+    
+    font-size: 17px;
     border:0;
     cursor: pointer;
 }
@@ -32,7 +32,7 @@
 .profile {
     width: 800px;
     height: 250px;
-    background-image: url("../image/image3.jpg");
+    background-image: url("../image/image1.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -64,18 +64,27 @@
 }
 
 
-.change {
-    @include button-decoration();
-    background-color: $editBtn;
-    width: 85px;
-    height: 30px;
-    float: right;
-    margin-right: 50px;
-    font-size: 18px;
+.edit-image {
+    font-size: 8px;
+    text-align: center;
     a {
-        color: white;
         text-decoration: none;
-        margin-left: 10px;
+    }
+}
+
+
+
+.editBtn {
+    @include button-decoration();
+    width: 130px;
+    background-color: $saveBtn;
+    padding: 5px;
+    &:focus {
+        outline: none;
+    }
+    a {
+        text-decoration: none;
+        color: white;
     }
 }
 
@@ -161,6 +170,28 @@
         @include select-effect();
     }
 }
+
+
+.card-wrapper {
+    margin-left: 40rem;
+}
+
+.saveBtn {
+    @include button-decoration();
+    width: 80px;
+    background-color: $saveBtn;
+    padding: 5px;
+    float: right;
+    margin-top: 10rem;
+    &:focus {
+        outline: none;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
 
 
 

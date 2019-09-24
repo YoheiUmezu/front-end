@@ -1,0 +1,97 @@
+h2 {
+  font-size: 60px;
+  margin: 30px 0 0 0;
+}
+
+h3 {
+  font-size: 40px;
+  border-bottom: solid 2px #fff;
+}
+
+h4 {
+  padding-top: 2rem;
+  font-size: 30px;
+}
+
+p {
+  font-size: 25px;
+  padding-top: 1rem;
+  color: #c7c7c7;
+}
+
+.button {
+  height: 5rem;
+  width: 2rem;
+}
+
+.contents .use_contents {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn button {
+  background-color: #F70661;
+  margin: 3em 0 2em;
+  height: 50px;
+  width: 250px;
+  border: none;
+  border-radius: 30px;
+  font-size: 25px;
+  cursor: pointer;
+  outline: none;
+}
+
+img {
+  width: 25%;
+}
+
+.use_contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.use_contents img {
+  display: inline-block;
+  margin-right: 5rem;
+}
+
+.Description {
+  margin-right: 5rem;
+}
+
+.Description .btn {
+  text-align: center;
+}
+
+.start {
+  padding-top: 6rem;
+}
+
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: meiryo;
+  color: #fff;
+}
+
+body {
+  padding: 0 50px;
+  background-color: #000;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=main.css.map */

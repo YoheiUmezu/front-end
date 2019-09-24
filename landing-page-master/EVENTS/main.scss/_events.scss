@@ -1,0 +1,67 @@
+.new-arrival{
+    display: flex;
+}
+h2{
+    font-size: 60px;
+    margin: 30px 0 0 0;
+}
+h3{
+    display: block;
+    font-size: 30px;
+    padding: 80px 0 80px;
+    text-decoration: underline;
+}
+
+h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+    p{
+        color: #FF8800;
+     }
+}
+
+
+.events-card img{
+    height: 240px;
+    width: 300px;
+    object-fit: cover;
+    transition-duration: 0.5s; 
+}
+.events-card img:hover {
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+    }
+.heart-icon{
+    margin-top: 0.3em;
+}
+.H-icon{
+    color:#FF4A33;
+    font-size: 1.7em;
+}
+.events-content{
+    display: flex;
+}
+.events-img{
+    margin: 0 25px 10px 0;
+    height: 240px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.btn-seemore{
+   text-align: center;
+   padding: 80px 0;
+
+   button{
+        height: 50px;
+        width: 250px;
+        background: #7206F7;
+        border: none;
+        border-radius: 30px;
+        font-size: 25px;
+        cursor: pointer;
+        outline: none;
+   }
+}

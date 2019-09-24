@@ -2,29 +2,8 @@
     color: white;
     margin-top: 10px;
     border-radius: 30px;
-    height: 40px;
-    font-size: 15px;
+    font-size: 17px;
     border:0;
-    cursor: pointer;
-}
-
-@mixin select {
-    margin-top: 15px;
-    margin-bottom: 30px;
-    margin-left: 26px;
-    border: none;
-}
-
-
-@mixin select-effect {
-    background-color: white;
-    background: none;
-    color: rgb(51, 51, 51);
-    font-size: 15px;
-    height: 30px;
-    width: 40%;
-    border: none;
-    background-color: white;
     cursor: pointer;
 }
 
@@ -37,7 +16,7 @@
     background-position: center;
 }
 
-.person {
+.image-preview {
     margin: 0 auto;
     width: 130px;
     height: 130px;
@@ -55,36 +34,40 @@
     }
 }
 
-label {	
-text-align: center;
-margin-bottom: 30px;
-float: right;
-color: white;
-background-color: $editBtn;
-padding: 10px;
-border-radius: 30px;
-width: 110px;
-font-size: 10px;
-border: none;
-cursor: pointer;
-input {
-    display: none; 
+input[type="file"]{
+    display: none;
 }
+
+label {
+    color: white;
+    @include button-decoration();
+    width: 130px;
+    background-color: $editBtn;
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;
 }
+
+.preview {
+    text-align: center;
+}
+
+
 
 .userinfo {
     border-bottom: 0.2px solid rgb(61, 61, 61);
 }
 
+.edit-image {
+    font-size: 8px;
+    text-align: center;
+}
 
-.change {
+.editBtn {
     @include button-decoration();
+    width: 130px;
     background-color: $editBtn;
-    width: 75px;
-    height: 30px;
-    float: right;
-    margin-right: 50px;
-    font-size: 18px;
+    padding: 5px;
     &:focus {
         outline: none;
     }
@@ -123,22 +106,32 @@ input {
 }
 
 
-.gender {
-    @include select();
-    select {
-        @include select-effect();
+select {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 26px;
+    border: none;
+    width: 30rem;
+    font-size: 18px;
+    background: none;
+    color: white;
+    border-bottom: 1px solid white;
+    appearance: none;
+    &:focus {
+        outline: none;
     }
 }
 
-.country {
-    @include select();
-    select {
-        @include select-effect();
-    }
-}
 
-.save {
+.saveBtn {
+    @include button-decoration();
+    width: 80px;
+    background-color: $saveBtn;
+    padding: 5px;
     float: right;
+    &:focus {
+        outline: none;
+    }
 }
 
 
