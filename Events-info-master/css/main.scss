@@ -1,10 +1,9 @@
-@import "./variables";
 @import "./layout";
 @import "./components";
-@import "./contents";
 @import "./info";
 @import "./comments";
 @import "./card";
+@import "./variables";
 
 
 * {
@@ -13,8 +12,15 @@
     padding: 0;
 }
 
-body {
-    
-    background-color: black;
 
+
+body {
+    background-color: black;
+    font-family: 'Nuito';
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 0.5px grey solid;
 }

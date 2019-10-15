@@ -1,81 +1,50 @@
-@mixin button-decoration {
-    margin-top: 10px;
-    border-radius: 30px;
-    height: 33px;
-    font-size: 12px;
-    border:0;
-    cursor: pointer;
+h2 {
+    color: white;
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
 }
 
-.card-wrapper {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-    .event-info {
-        color: white;
-    }
-}
-
-.card {
-    margin: 0;
-    border: 1px solid white;
-    height: 187px;
-    width: 280px;
-    justify-content: space-around;
-}
 
 .event-name {
-    font-size: 16px;
+    font-size: 20px;
     color: white;
 }
 
+.heart {
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    margin-top: -20px;
+    margin-left: 17rem;
+    &:focus {
+        outline: none;
+    }
+}
+
+
 .event-date {
-    font-size: 13px;
+    font-size: 18px;
     color: #FD8700;
 }
 
-.event-info {
-    font-size: 12px;
+.card-info {
+    color: white;
+    font-size: 18px;
 }
 
-.button {
+.save-mark {
     display: flex;
-    width: 300px;
-    margin-left: 120px;
-}
-
-.seemore {
-    background-color: $seemoreBtn;
-    color: white;
-    width: 65px;
-    @include button-decoration();
-    &:focus {
-        outline: none;
-    }
 }
 
 
-.delete {
-    background-color: $editBtn;
-    color: black;
-    margin-left: 20px;
-    width: 55px;
-    @include button-decoration();
-    &:focus {
-        outline: none;
-    }
-}
 
-.save {
-    background-color: $saveBtn;
-    color: white;
-    margin-left: 20px;
-    width: 55px;
-    @include button-decoration();
-    &:focus {
-        outline: none;
-    }
-}
+
+
+
+
+
+
 
 
 

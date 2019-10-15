@@ -1,0 +1,23 @@
+
+#header {
+    height: 50px;
+    background: #2D2524;
+    padding: 0 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: block;
+    transition: top 0.7s;
+    font-family: 'Lato', sans-serif;
+}
+
+.content {
+    height: 195vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+}
+
